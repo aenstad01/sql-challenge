@@ -4,12 +4,12 @@ CREATE TABLE "departments" (
 );
 
 CREATE TABLE "dept_emp" (
-	"emp_no" INT NOT NULL,
+	"emp_no" INT PRIMARY KEY NOT NULL,
     "dept_no" VARCHAR NOT NULL
 );
 
 CREATE TABLE "dept_manager" (
-    "dept_no" VARCHAR   NOT NULL,
+    "dept_no" VARCHAR PRIMARY KEY NOT NULL,
     "emp_no" INT NOT NULL
 );
 
